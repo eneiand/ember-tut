@@ -5,4 +5,6 @@ window.Todos = Ember.Application.create();
 //Fixtures are used to put sample data into an application
 //tell the app that our ApplicationAdapter is an extension of
 //DS.FixtureAdapter.
-Todos.ApplicationAdapter = DS.FixtureAdapter.extend();
+Todos.ApplicationAdapter =  DS.LSAdapter.extend({
+  namespace: 'todos-emberjs'
+});
